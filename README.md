@@ -1,2 +1,2 @@
 # Hello World
-#### By: Journ Chan
+##### by Journ Chan

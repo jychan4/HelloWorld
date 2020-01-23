@@ -1,28 +1,30 @@
 /*
   Hello, World
-  by Scott Kildall
+  by Journ Chan
   
-  Writes "Hello, World" on the screen (black) with some sort of color
+  ICA 1/23/20 first class Hello World Processing Program
 */
 
-// Global variable for our font, which we create at startup
 PFont f;
 
-void setup() {
-  size(1000, 600);
+void setup () {
+  size(1000,800);
   textAlign(CENTER);
-
-  // f is created here
-  f = createFont("Helvetica",24,true); 
+  
+  // create the font as a global variable
+  f = createFont("Avenir", 40);
 }
+void draw () {
+  background(250,100,0);
+  if (mousePressed) {
+    background(0);
+  }
 
-void draw() {
-  // background for the screen, 0-255 grayscale or an (r,g,b) color
-  background(0);
+
+  //activate font
+  textFont(f);
+  fill(250,100,100);
   
-  // font and fill color
-  textFont(f);       
-  fill(0,255,128);
-  
-  text("Hello, World",width/2,200); 
+  //draw text 
+  text("INSERT CODE HERE", width/2, height/2);
 }
